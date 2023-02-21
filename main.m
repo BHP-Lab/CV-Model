@@ -5,3 +5,5 @@ process_output
 calculate_trends
 plot_graphs
 %save(strcat('Omnibus'));
+
+a = 1;
