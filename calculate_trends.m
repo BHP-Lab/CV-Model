@@ -11,6 +11,7 @@ for i=1:length(vec)-1
     SBP(i)=max(P1(st:en-1)); %SBP
     PP(i)= SBP(i) - DBP(i); %PP
     MAP1(i) = DBP(i)+(1/3).*(SBP(i)-DBP(i)); %MAP from SBP and DBP
+    CVP(i)=sum(P15(st:en-1).*step(st:en-1))/(tout(en)-tout(st)); %MAP from integration
 
     %Average Transmural Right-Atrial Pressure
     dPra=Pra-Pth;

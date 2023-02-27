@@ -197,32 +197,71 @@ ZVpv=yout(:,73);
 ZVla=yout(:,74);
 ZVlv=yout(:,75);
 
+%Bodyweight Pressures
+Pw1=yout(:,76);
+Pw2=yout(:,77);
+Pw3=yout(:,78);
+Pw4=yout(:,79);
+Pw5=yout(:,80);
+Pw6=yout(:,81);
+Pw7=yout(:,82);
+Pw8=yout(:,83);
+Pw9=yout(:,84);
+Pw10=yout(:,85);
+Pw11=yout(:,86);
+Pw12=yout(:,87);
+Pw13=yout(:,88);
+Pw14=yout(:,89);
+Pw15=yout(:,90);
+PwH1=yout(:,91);
+PwH2=yout(:,92);
+PwH3=yout(:,93);
+PwH4=yout(:,94);
+
 %Calculate Compartment Volumes
-V1=C1*(P1-Pthn)+ZV1;
-V2=C2*(P2-Pthn)+ZV2;
-V3=yout(:,76);
-V4=yout(:,77);
-V5=yout(:,78);
-V6=C6*(P6-Pthn)+ZV6;
-V7=C7*(P7-Pabdn)+ZV7;
-V8=C8*(P8-Pabdn)+ZV8;
-V9=yout(:,79);
-V10=C10*(P10-Pabdn)+ZV10;
-V11=yout(:,80);
-V12=C12*(P12-PeLBn)+ZV12;
-V13=yout(:,81);
-V14=yout(:,82);
-V15=C15*(P15-Pthn)+ZV15;
-VH1=CH1*(PH1-Pen)+ZVH1;
-VH2=yout(:,83);
-VH3=yout(:,84);
-VH4=yout(:,85);
+V1=C1*(P1-Pthn-Pw1)+ZV1;
+V2=C2*(P2-Pthn-Pw2)+ZV2;
+V3=yout(:,95);
+V4=yout(:,96);
+V5=yout(:,97);
+V6=C6*(P6-Pthn-Pw6)+ZV6;
+V7=C7*(P7-Pabdn-Pw7)+ZV7;
+V8=C8*(P8-Pabdn-Pw8)+ZV8;
+V9=yout(:,98);
+V10=C10*(P10-Pabdn-Pw10)+ZV10;
+V11=yout(:,99);
+V12=C12*(P12-PeLBn-Pw12)+ZV12;
+V13=yout(:,100);
+V14=yout(:,101);
+V15=C15*(P15-Pthn-Pw15)+ZV15;
+VH1=CH1*(PH1-Pen-PwH1)+ZVH1;
+VH2=yout(:,102);
+VH3=yout(:,103);
+VH4=yout(:,104);
 Vra=Cra.*(Pra-Pthn)+ZVra;
 Vrv=Crv.*(Prv-Pthn)+ZVrv;
 Vpa=Cpa*(Ppa-Pthn)+ZVpa;
 Vpv=Cpv*(Ppv-Pthn)+ZVpv;
 Vla=Cla.*(Pla-Pthn)+ZVla;
-Vlv=yout(:,86);
+Vlv=yout(:,105);
+
+
+
+%Left Ventricular Outflow
+qlvo=yout(:,106);
+
+%Cardiac Pacemaker
+tv=yout(:,107);
+t=yout(:,108);
+RRint=yout(:,109);
+NewBeat=yout(:,110);
+
+%Design of Experiment
+DOE_TiltAngle=yout(:,111);
+DOE_Speed=yout(:,112);
+DOE_LBNP=yout(:,113);
+DOE_GLevel=yout(:,114);
+
 
 %Total Zero Pressure Volume
 ZVtot=ZV1+ZV2+ZV3+ZV4+ZV5+ZV6+ZV7+ZV8+ZV9+ZV10+ZV11...
@@ -233,21 +272,6 @@ ZVtot=ZV1+ZV2+ZV3+ZV4+ZV5+ZV6+ZV7+ZV8+ZV9+ZV10+ZV11...
 Vtot=V1+V2+V3+V4+V5+V6+V7+V8+V9+V10+V11...
     +V12+V13+V14+V15+VH1+VH2+VH3+VH4...
     +Vra+Vrv+Vpa+Vpv+Vla+Vlv+Vint;
-
-%Left Ventricular Outflow
-qlvo=yout(:,87);
-
-%Cardiac Pacemaker
-tv=yout(:,88);
-t=yout(:,89);
-RRint=yout(:,90);
-NewBeat=yout(:,91);
-
-%Design of Experiment
-DOE_TiltAngle=yout(:,92);
-DOE_Speed=yout(:,93);
-DOE_LBNP=yout(:,94);
-DOE_GLevel=yout(:,95);
 
 
 

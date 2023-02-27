@@ -3,7 +3,7 @@ load input_reflex_filters.mat
 sim cv_model
 process_output
 calculate_trends
-plot_graphs2
-%plot_graphs
+%plot_graphs_debug
+plot_graphs
 %save(strcat('Omnibus'));
 

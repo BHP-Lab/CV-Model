@@ -58,5 +58,8 @@ title('Total Blood Volume')
 figure;plot(tout,TiltAngle)
 title('Tilt Angle')
 
+% Central Venous Pressure
+figure;plot(times,CVP)
+title('Central Venous Pressure')
 
 
