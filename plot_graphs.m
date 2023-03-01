@@ -62,4 +62,14 @@ title('Tilt Angle')
 figure;plot(times,CVP)
 title('Central Venous Pressure')
 
+% Head Resistance
+figure;plot(tout,Rhn)
+title('Head Resistance')
 
+% CBF
+figure;plot(tout,Qhead)
+title('CBF')
+
+% CBF
+figure;plot(tout,percVP)
+title('Proportion through Vertebral Plexus')

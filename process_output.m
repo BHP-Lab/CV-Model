@@ -109,7 +109,7 @@ Td = T-3*Ts/2;
 %Pressure 1 XXX
 P1=yout(:,1);
 P2=yout(:,2);
-P3=yout(:,3);
+P3=yout(:,3); 
 P4=yout(:,4);
 P5=yout(:,5);
 P6=yout(:,6);
@@ -261,6 +261,12 @@ DOE_TiltAngle=yout(:,111);
 DOE_Speed=yout(:,112);
 DOE_LBNP=yout(:,113);
 DOE_GLevel=yout(:,114);
+
+%Proportion of flow through VP
+percVP=yout(:,115);
+
+%Cerebral Blood Flow
+Qhead=yout(:,116);
 
 
 %Total Zero Pressure Volume
