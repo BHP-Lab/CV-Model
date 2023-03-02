@@ -69,3 +69,30 @@ title('CBF')
 % VP Split
 figure;plot(tout,percVP)
 title('Proportion through Vertebral Plexus')
+
+% Flows
+tiledlayout(2,3)
+nexttile
+plot(tout,qlvo)
+title('Left Ventricular Outflow')
+nexttile
+plot(tout,Q3i)
+title('Upper Body')
+nexttile
+plot(tout,QH3i)
+title('Head')
+nexttile
+plot(tout,Q9i)
+title('Renal')
+nexttile
+plot(tout,Q11i)
+title('Splanchnic')
+nexttile
+plot(tout,Q13i)
+title('Legs')
+
+
+
+
+
+
