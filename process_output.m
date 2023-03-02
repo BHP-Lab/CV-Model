@@ -245,29 +245,56 @@ Vpv=Cpv*(Ppv-Pthn)+ZVpv;
 Vla=Cla.*(Pla-Pthn)+ZVla;
 Vlv=yout(:,105);
 
-
-
-%Left Ventricular Outflow
+%Flows
 qlvo=yout(:,106);
+Q2i=yout(:107);
+Q3i=yout(:108);
+Q4i=yout(:109);
+Q5i=yout(:110);
+Q5o=yout(:111);
+Q6i=yout(:112);
+Q7i=yout(:113);
+Q8i=yout(:114);
+Q9i=yout(:115);
+Q9o=yout(:116);
+Q10i=yout(:117);
+Q11i=yout(:118);
+Q11o=yout(:119);
+Q12i=yout(:120);
+Q13i=yout(:121);
+Q13o=yout(:122);
+Q14i=yout(:123);
+Q15i=yout(:124);
+Q15o=yout(:125);
+QH1i=yout(:126);
+QH2i=yout(:127);
+QH3i=yout(:128);
+QH3o=yout(:129);
+QH4i=yout(:130);
+Qvpi=yout(:131);
+QH4o=yout(:132);
+Qrai=yout(:133);
+Qri=yout(:134);
+Qro=yout(:135);
+Qpv=yout(:136);
+Qlai=yout(:137);
+Qli=yout(:138);
+Qint=yout(:139);
 
 %Cardiac Pacemaker
-tv=yout(:,107);
-t=yout(:,108);
-RRint=yout(:,109);
-NewBeat=yout(:,110);
+tv=yout(:,140);
+t=yout(:,141);
+RRint=yout(:,142);
+NewBeat=yout(:,143);
 
 %Design of Experiment
-DOE_TiltAngle=yout(:,111);
-DOE_Speed=yout(:,112);
-DOE_LBNP=yout(:,113);
-DOE_GLevel=yout(:,114);
+DOE_TiltAngle=yout(:,144);
+DOE_Speed=yout(:,145);
+DOE_LBNP=yout(:,146);
+DOE_GLevel=yout(:,147);
 
 %Proportion of flow through VP
-percVP=yout(:,115);
-
-%Cerebral Blood Flow
-Qhead=yout(:,116);
-
+percVP=yout(:,148);
 
 %Total Zero Pressure Volume
 ZVtot=ZV1+ZV2+ZV3+ZV4+ZV5+ZV6+ZV7+ZV8+ZV9+ZV10+ZV11...

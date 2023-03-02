@@ -1,7 +1,7 @@
 %% Graphs
 %TPR
 
-Rtot=1./(1./Rubn+1./Rrcn+1./Rscn+1./Rlcn);
+Rtot=1./(1./Rubn+1./Rrcn+1./Rscn+1./Rlcn+1./Rhn);
 figure;plot(tout,Rtot)
 title('Total Peripheral Resistance')
 
@@ -62,14 +62,10 @@ title('Tilt Angle')
 figure;plot(times,CVP)
 title('Central Venous Pressure')
 
-% Head Resistance
-figure;plot(tout,Rhn)
-title('Head Resistance')
-
 % CBF
-figure;plot(tout,Qhead)
+figure;plot(tout,QH3i)
 title('CBF')
 
-% CBF
+% VP Split
 figure;plot(tout,percVP)
 title('Proportion through Vertebral Plexus')
