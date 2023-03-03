@@ -296,6 +296,10 @@ DOE_GLevel=yout(:,147);
 %Proportion of flow through VP
 percVP=yout(:,148);
 
+%Upper body interstitium (for HDT)
+Qintub=yout(:,149);
+Vintub=yout(:,150);
+
 %Total Zero Pressure Volume
 ZVtot=ZV1+ZV2+ZV3+ZV4+ZV5+ZV6+ZV7+ZV8+ZV9+ZV10+ZV11...
     +ZV12+ZV13+ZV14+ZV15+ZVH1+ZVH2+ZVH3+ZVH4...
