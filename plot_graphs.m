@@ -2,6 +2,7 @@
 %TPR
 
 Rtot=1./(1./Rubn+1./Rrcn+1./Rscn+1./Rlcn+1./Rhn);
+TPR=Rtot;
 figure;plot(tout,Rtot)
 title('Total Peripheral Resistance')
 

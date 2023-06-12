@@ -11,9 +11,16 @@ for i=1:length(vec)-1
     SBP(i)=max(P1(st:en-1)); %SBP
     PP(i)= SBP(i) - DBP(i); %PP
     MAP1(i) = DBP(i)+(1/3).*(SBP(i)-DBP(i)); %MAP from SBP and DBP
-    CVP(i)=sum(P15(st:en-1).*step(st:en-1))/(tout(en)-tout(st)); %MAP from integration
+    CVP(i)=sum(P15(st:en-1).*step(st:en-1))/(tout(en)-tout(st)); %CVP from integration
+    JVP(i)=sum(PH4(st:en-1).*step(st:en-1))/(tout(en)-tout(st)); %JVP from integration
+    JVP2(i)=sum(PH3(st:en-1).*step(st:en-1))/(tout(en)-tout(st)); %JVP from integration
+
 
     %Average Transmural Right-Atrial Pressure
+    dPra=Pra-Pth;
+    Avg_dPra(i)=sum(dPra(st:en-1).*step(st:en-1))/(tout(en)-tout(st));
+
+    %JVP
     dPra=Pra-Pth;
     Avg_dPra(i)=sum(dPra(st:en-1).*step(st:en-1))/(tout(en)-tout(st));
 
@@ -58,6 +65,11 @@ for i=1:length(vec)-1
     AvgVlv(i)=sum(Vlv(st:en-1).*step(st:en-1))/(tout(en)-tout(st));
     AvgVtot(i)=sum(Vtot(st:en-1).*step(st:en-1))/(tout(en)-tout(st));
     times(i)=(tout(st)+tout(en))/2;
+
+
+%Dissertation
+
+
 end
 
 

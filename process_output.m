@@ -317,7 +317,7 @@ Vtot=V1+V2+V3+V4+V5+V6+V7+V8+V9+V10+V11...
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 HR=60./RRint; %HR
-TPR=1./(1./Rubn+1./Rrcn+1./Rscn+1./Rlcn); %TPR
+TPR=1./(1./Rubn+1./Rrcn+1./Rscn+1./Rlcn+1./Rhn); %TPR
 
 TiltAngle=DOE_TiltAngle*180/pi; %Tilt Angle in Degrees
 Speed=DOE_Speed*30/pi; %Speed in RPM
